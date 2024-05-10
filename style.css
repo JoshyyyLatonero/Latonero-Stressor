@@ -1,31 +1,4 @@
-h1{
-    text-align:center;
-}
-.navbar ul{
-    list-style-type: none;
-    background-color:black;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-}
-.navbar a:hover{
-    background-color: hsl(0,0%,10%);
-} 
-.navbar li{
-    float: left;
-}
-
-
-
-
-PHP
+helloworld.php
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,15 +10,152 @@ PHP
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <nav class="navbar">
+        <div class="logo">
+                <ul>
+                    <img src="Photos/logo.png" width= "200px">
+                    <li><a href="http://localhost/Latonero/menu.php">MENU</a></li>
+                    <li><a href="http://localhost/Latonero/contact.php">CONTACT US</a></li>
+                </ul>
+        </div>
+    </nav> 
+    <br>
+    <br>
+    <div class="body">
+        <img src="Photos/plen.jpg" width= "300px" height="400px">
+        <img src="Photos/alps.jpg" width= "300px" height="380px">
+        <img src="Photos/korea.jpg" width= "300px" height="360px">
+        <h1 class="description">SEE THE BEST <br> TRAVEL <br> DESTINATIONS OF 2024</h1> 
+        <button type="button"><a href="seemore.php">SEE MORE</button>
+    </div>
+</body>
+</html>
 
-<nav class="navbar">
-    <div class="logo">
-        <img src="logo.png" width= "100px">
-    <ul>
-        <li><a href="login.html">LOGIN OR SIGN UP</a></li>
-        <li><a href="help">HELP</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-        <li><a href="menu.html">MENU</a></li>
-    </ul>
-</nav> 
+style.css
+
+h1{
+    text-align:center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color:black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    font-weight: bold;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 20px;
+    
+}
+.navbar a:hover{
+    background-color: hsl(0,0%,10%);
+} 
+.navbar li{
+    float: right;
+}
+.body {
+    background-color: #4F494C;
+    height: 60vh;
+    align-content: center;
+    color: white;
+    
+}
+img {
+    margin-right: 50px;
+}
+.description{
+    float: right;
+    margin: 150px;
+    padding: 10px;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.body button {
+    float:right;
+    background-color: lightslategrey;
+   color: black;
+   
+}
+.container {
+    text-decoration: none;
+    background-color: slategrey;
+    color: black;
+    padding: 300px;
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 20px;
+}
+ul {
+    list-style: none;
+}
+
+contact.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+        <div class="contact-us">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>For any inquiries or assistance, please feel free to contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> info@helloworld.com</li>
+                    <li><strong>Phone:</strong> +1234567890</li>
+                    <li><strong>Address:</strong> 123 Bulag Street, Biringan City, Philippines</li>
+                </ul>
+            </div>
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>Hello World! is your one-stop destination for finding the best travel deals at a very affordable price.</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Hello World!. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
+seemore.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <h1>SELECT YOUR DREAM DESTINATION AT AN AFFORDABLE PRICE</</h1>
+</head>
+<body>
+   
+    
+</body>
+</html>
+
+menu.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    
+</body>
+</html>
